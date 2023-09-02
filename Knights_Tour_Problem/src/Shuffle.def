@@ -1,0 +1,13 @@
+Guy Kogan
+CS 421
+Algorithms
+Jyh Haw Yeh
+Shuffle.def
+
+t(i, j) =
+{
+ true 			 					 if i = 0 and j = 0
+ t(i-1, 0) && b(X_i, Z_i) 					 if i > 0 and j = 0
+ t(0, j-1) && b(Y_j, Z_j) 				         if i = 0 and j > 0
+ (t(i-1, j) && b(X_i, Z(i+j))) || (t(i, j-1) && b(Y_j, Z(i+j)))  if i > 0 and j > 0
+}
